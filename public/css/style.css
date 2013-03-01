@@ -1,0 +1,63 @@
+/* 
+    Document   : style
+    Created on : Feb 26, 2013, 12:24:58 PM
+    Author     : Pete
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;    
+}
+
+html {
+    background-color: #dddddd;
+    font-family: 'consolas';
+}
+
+body {
+    width: auto;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3em;
+    background-color: #ffffff;
+}
+
+#logo {
+    padding-bottom: 3em;
+}
+
+#logo a {
+    color:black;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#logo a:hover {
+    font-weight: bold;
+}
+
+.nav {
+    display: inline-block;
+    width: 100%;
+    background-color: #dddddd
+}
+
+.nav li a {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding-right: 1em;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+#content {
+    padding: 3em;
+}
+

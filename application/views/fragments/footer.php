@@ -1,3 +1,3 @@
-<strong>&copy; <?php echo date("Y"); ?></strong>
+<div id="copyright">&copy; <?php echo date("Y"); ?></div>
 </body>
 </html>

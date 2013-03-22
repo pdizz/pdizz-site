@@ -6,58 +6,132 @@
         Purpose of the stylesheet follows.
 */
 
+/*
+Palatte:
+
+#0f0f0f - dk grey
+#1e1e1e - grey
+#dd69d85 - beige
+#569cd6 - blue
+#608b4e - green
+#68217a - purple
+#ffffff - white
+
+
+*/
+
+@font-face {
+    font-family: inconsolata;
+    src: local(inconsolata), url('fonts/inconsolata.otf') format('opentype');
+}
+
 root { 
     display: block;    
 }
 
 html {
-    background-color: #dddddd;
-    font-family: 'consolas';
+    background-color: #0f0f0f;
+    font-family: inconsolata;
+    color: #ffffff;
 }
 
 body {
     width: auto;
     height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 auto;
+    max-width: 800px;
     padding: 3em;
-    background-color: #ffffff;
+    background-color: #1e1e1e;
 }
+
+a {
+    color: #569cd6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/*
+a:visited {
+    color: #68217a;
+}*/
 
 #logo {
     padding-bottom: 3em;
 }
 
 #logo a {
-    color:black;
+    color: #608b4e;
     font-size: 2em;
-    text-decoration: none;
-}
-
-#logo a:hover {
-    font-weight: bold;
 }
 
 .nav {
     display: inline-block;
     width: 100%;
-    background-color: #dddddd
+    background-color: #0f0f0f;
+    padding: .2em;
 }
 
 .nav li a {
-    color: black;
     font-size: 1em;
-    text-decoration: none;
     float: left;
     display: block;
     padding-right: 1em;
 }
 
-.nav li a:hover {
-    font-weight: bold;
+#content {
+    padding: 2em;
 }
 
-#content {
-    padding: 3em;
+#content h1 {
+    font-size: 2em;
+    padding: .2em;
+    text-align: center;
+}
+
+#content h2 {
+    font-size: 1.5em;
+    font-style: italic;
+    padding: .5em 0em;
+    clear: both;
+}
+
+/* Resume specific */
+
+#contact {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact li{
+    display: inline-block;
+    padding: .3em 1em;
+}
+
+#tech_left {
+    float:left;
+    margin-left: 3em;
+}
+
+#tech_right {
+    float: right;
+    margin-right: 3em;
+}
+
+/* end resume */
+
+#content ul {
+    padding: 0 1em;
+}
+
+#content ul li {
+    list-style: square;
+    padding-top: .1em;
+}
+
+#content ul li li {
+    list-style: circle;
+    margin-left: .5em;
 }
 

@@ -5,8 +5,8 @@ class Contact extends CI_Controller {
     public function __construct() {
         parent::__construct();
         
-        $this->load->helper(array('form', 'email'));
-        $this->load->library('form_validation');
+        $this->load->helper('form');
+        $this->load->library(array('form_validation', 'email'));
     }
     
     public function index() {
@@ -33,9 +33,8 @@ class Contact extends CI_Controller {
             $message = $this->input->post('message');
             
             // construct email and send
-            $this->email->from($sender_email);
+            $this->email->from($sender_email, $sender_name);
             $this->email->to('pete.albrecht@gmail.com');
-            $this->email->reply_to($sender_email, $sender_name);
             $this->email->subject($subject);
             $this->email->message($message);
             $this->email->send();
@@ -43,9 +42,9 @@ class Contact extends CI_Controller {
             // store contact info in DB
             
             // success!
-            $this->load->view('fragments/header', array('title' => 'Contact Me')); // pass in page title
+            $this->load->view('fragments/header', array('title' => 'Success')); // pass in page title
             $this->load->view('fragments/navigation');
-            $this->load->view('contact/success'); // TODO maintain form state
+            $this->load->view('contact/success'); 
             $this->load->view('fragments/navigation');
             $this->load->view('fragments/footer');
         }

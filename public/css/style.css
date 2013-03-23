@@ -135,3 +135,12 @@ a:visited {
     margin-left: .5em;
 }
 
+#contact_form label{
+    display: block;
+}
+
+#contact_form .error {
+    float: right;
+    color: #68217a;
+}
+

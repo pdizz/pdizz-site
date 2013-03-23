@@ -21,7 +21,7 @@ class Contact extends CI_Controller {
             // reload the page
             $this->load->view('fragments/header', array('title' => 'Contact Me')); // pass in page title
             $this->load->view('fragments/navigation');
-            $this->load->view('pages/contact'); // TODO maintain form state
+            $this->load->view('contact/contact'); // TODO maintain form state
             $this->load->view('fragments/navigation');
             $this->load->view('fragments/footer');
         }
@@ -41,6 +41,13 @@ class Contact extends CI_Controller {
             $this->email->send();
             
             // store contact info in DB
+            
+            // success!
+            $this->load->view('fragments/header', array('title' => 'Contact Me')); // pass in page title
+            $this->load->view('fragments/navigation');
+            $this->load->view('contact/success'); // TODO maintain form state
+            $this->load->view('fragments/navigation');
+            $this->load->view('fragments/footer');
         }
 
         

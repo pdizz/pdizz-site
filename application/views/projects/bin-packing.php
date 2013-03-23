@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/css/demo.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/demo.css" />
 
 <div id="content">        
     <div class='blocks'>
@@ -29,6 +29,6 @@
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="<?php echo base_url(); ?>/js/packagizer.js" type="text/javascript"></script>
-    <script src="<?php echo base_url(); ?>/js/demo.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>js/packagizer.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>js/demo.js" type="text/javascript"></script>
 </div>

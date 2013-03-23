@@ -6,7 +6,7 @@ class Contact extends CI_Controller {
         parent::__construct();
         
         $this->load->helper('form');
-        $this->load->library(array('form_validation', 'email'));
+        $this->load->library(array('form_validation', 'email', 'page'));
     }
     
     public function index() {
@@ -18,12 +18,18 @@ class Contact extends CI_Controller {
         $this->form_validation->set_rules('message', 'Message', 'required');
         
         if ($this->form_validation->run() === FALSE) {
-            // reload the page
+            // reload the page            
+            //$this->load->library('page');
+            $this->page->render('contact/contact', array('title' => 'Contact Me')); // pass in page title
+            
+            /* 
             $this->load->view('fragments/header', array('title' => 'Contact Me')); // pass in page title
             $this->load->view('fragments/navigation');
             $this->load->view('contact/contact'); // TODO maintain form state
             $this->load->view('fragments/navigation');
             $this->load->view('fragments/footer');
+             * 
+             */
         }
         else {
             // form passed validation
@@ -42,11 +48,17 @@ class Contact extends CI_Controller {
             // store contact info in DB
             
             // success!
+            $this->load->library('page');
+            $this->page->render('contact/success', array('title' => 'Success')); // pass in page title
+            
+            /*
             $this->load->view('fragments/header', array('title' => 'Success')); // pass in page title
             $this->load->view('fragments/navigation');
             $this->load->view('contact/success'); 
             $this->load->view('fragments/navigation');
             $this->load->view('fragments/footer');
+             * 
+             */
         }
 
         

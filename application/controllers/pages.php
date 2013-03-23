@@ -13,7 +13,7 @@ class Pages extends CI_Controller {
         
         $this->load->view('fragments/header', $data);
         $this->load->view('fragments/navigation');
-        $this->load->view('pages/' . $page, $data);
+        $this->load->view('pages/' . $page);
         $this->load->view('fragments/navigation');
         $this->load->view('fragments/footer');
         

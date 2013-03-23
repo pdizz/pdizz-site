@@ -38,9 +38,7 @@
 |
 */
 
-//$route['news/create'] = 'news/create';
-//$route['news/(:any)'] = 'news/view/$1';
-//$route['news'] = 'news';
+$route['contact'] = 'contact'; // so it doesn't redirect to pages/view/contact
 $route['projects'] = 'projects/view';
 $route['projects/(:any)'] = 'projects/view/$1';
 $route['(:any)'] = 'pages/view/$1';

@@ -144,3 +144,8 @@ a:visited {
     color: #68217a;
 }
 
+#copyright {
+    text-align: center;
+    padding: .5em;
+}
+

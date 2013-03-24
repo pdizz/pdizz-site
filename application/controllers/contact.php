@@ -38,6 +38,8 @@ class Contact extends CI_Controller {
             $subject = $this->input->post('subject');
             $message = $this->input->post('message');
             
+            // TODO captcha!!!!!!!!!
+            
             // construct email and send
             $this->email->from($sender_email, $sender_name);
             $this->email->to('pete.albrecht@gmail.com');
@@ -46,11 +48,12 @@ class Contact extends CI_Controller {
             $this->email->send();
             
             // store contact info in DB
+            $this->load->model('contact_model');
+            $this->contact_model->set($sender_email, $sender_name, $subject, $message);
             
             // success!
             $data['title'] = 'Success';
-            $data['view'] = 'contact/success';
-            
+            $data['view'] = 'contact/success';            
             $this->load->view('template', $data);
             
         }

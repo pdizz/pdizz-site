@@ -3,7 +3,6 @@ Second parameter to form_input() is used to re-populate
 fields with previous info if validation fails
 -->
 
-
 <div id="content">
     <h1>Contact Me</h1>
     <?php echo form_open('contact', 'id="contact_form"'); ?>

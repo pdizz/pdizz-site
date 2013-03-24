@@ -48,8 +48,10 @@ class Contact extends CI_Controller {
             // store contact info in DB
             
             // success!
-            $this->session->set_flashdata('message', 'Thanks for reaching out!');
-            redirect(base_url() . 'home');
+            $data['title'] = 'Success';
+            $data['view'] = 'contact/success';
+            
+            $this->load->view('template', $data);
             
         }
 

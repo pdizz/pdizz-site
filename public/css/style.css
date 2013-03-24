@@ -11,7 +11,7 @@ Palatte:
 
 #0f0f0f - dk grey
 #1e1e1e - grey
-#dd69d85 - beige
+#d69d85 - beige
 #569cd6 - blue
 #608b4e - green
 #68217a - purple
@@ -78,6 +78,21 @@ a:visited {
     float: left;
     display: block;
     padding-right: 1em;
+}
+
+#message {
+    text-align: center;
+    color: #d69d85;
+    /*
+    font-size: 1.5em;
+    text-align: center;
+    color: #d69d85;
+    background-color: #0f0f0f;
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    left: 0;
+    */
 }
 
 #content {

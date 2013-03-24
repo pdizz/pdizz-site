@@ -9,17 +9,11 @@ class Pages extends CI_Controller {
             show_404();
         }
         
+        // set path to view and pass to page template
         $data['title'] = ucfirst($page);
-        
-        $this->load->library('page');
-        $this->page->render('pages/' . $page, $data);
-        /*
-        $this->load->view('fragments/header', $data);
-        $this->load->view('fragments/navigation');
-        $this->load->view('pages/' . $page);
-        $this->load->view('fragments/navigation');
-        $this->load->view('fragments/footer');
-         * */        
+        $data['view'] = 'pages/' . $page;
+        $this->load->view('template', $data);
+
     }
 }
 

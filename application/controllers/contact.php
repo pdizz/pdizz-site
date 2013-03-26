@@ -28,6 +28,14 @@ class Contact extends CI_Controller {
             $data['subject'] = $this->input->post('subject');
             $data['message'] = $this->input->post('message');
             
+            // get source code to pass to source view
+            $this->load->library('source');
+            $data['source'] = $this->source->get(
+                    'controllers/contact.php',
+                    'models/contact_model.php', 
+                    'views/contact/contact.php'
+                    );
+            
             $this->load->view('template', $data);
 
         }
@@ -53,7 +61,16 @@ class Contact extends CI_Controller {
             
             // success!
             $data['title'] = 'Success';
-            $data['view'] = 'contact/success';            
+            $data['view'] = 'contact/success';   
+            
+            // get source code to pass to source view
+            $this->load->library('source');
+            $data['source'] = $this->source->get(
+                    'controllers/contact.php',
+                    NULL, 
+                    'views/contact/success.php'
+                    );
+            
             $this->load->view('template', $data);
             
         }

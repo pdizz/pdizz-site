@@ -1,4 +1,3 @@
-<div id="content">
 <h1>Peter A.</h1>
 <ul id="contact">
     <li>Denver, CO</li><li><a href="contact">Email</a></li><li><a href="https://github.com/pdizz">github.com/pdizz</a></li>
@@ -83,4 +82,3 @@
         </ul>
     </li>
 </ul>
-</div>

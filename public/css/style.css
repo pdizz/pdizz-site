@@ -159,6 +159,12 @@ a:visited {
     color: #68217a;
 }
 
+#source_code {
+    display: block;
+    display: none;
+    clear: both;
+}
+
 #copyright {
     text-align: center;
     padding: .5em;

@@ -12,6 +12,12 @@ class Pages extends CI_Controller {
         // set path to view and pass to page template
         $data['title'] = ucfirst($page);
         $data['view'] = 'pages/' . $page;
+        
+        // get source code to pass to source view
+        $this->load->library('source');
+        $data['source'] = $this->source->get('controllers/pages.php', NULL, 'views/pages/'.$page.'.php');
+        
+        // render the page
         $this->load->view('template', $data);
 
     }

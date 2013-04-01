@@ -159,14 +159,22 @@ a:visited {
     color: #68217a;
 }
 
-#source_code {
-    display: block;
-    display: none;
-    clear: both;
-}
-
 #copyright {
     text-align: center;
     padding: .5em;
+}
+
+#source_code {
+    margin: 2em;
+    padding: .5em;
+    color: #d69d85;
+    background-color: #0f0f0f;
+    border: 1px solid #d69d85;
+}
+
+.slide_toggle_box {
+    display: none;
+    text-wrap: normal;
+    overflow: auto;
 }
 

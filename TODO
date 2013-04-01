@@ -1,12 +1,16 @@
+style for source code box
+
+
+
+
 License info for bin-packing project
 
 alchemy project
 
 contact page
-- contact model
 - captcha
 
-mesages view
+messages view
 
 link personal projects section in resume to projects home page
 
@@ -16,5 +20,3 @@ HOME PAGE FFS!!!
 move all project files (css, js, views) to separate folder
 
 404!!!!!!
-
-take content div out of individual pages

@@ -7,18 +7,16 @@ class Source {
         $source_code = '';
         
         if ($controller !== NULL) {
-            $source_code .= "/* This is the controller '$controller' */ \n\n";
+            $source_code .= "\n/* This is the controller '$controller' */ \n\n";
             $source_code .= $this->clean_code($controller);
         }
         
         if ($model !== NULL) {
-            $source_code .= "/* This is the model '$model' */ \n\n";
+            $source_code .= "\n/* This is the model '$model' */ \n\n";
             $source_code .= $this->clean_code($model);
         }
-        
-        if ($view !== NULL) {
-            $source_code .= "/* This is the content view '$view' */ \n\n";
-            $source_code .= $this->clean_code($view);
+        else {
+            $source_code .= "\n/* There is no model used on this page */ \n\n";
         }
         
         return $source_code;

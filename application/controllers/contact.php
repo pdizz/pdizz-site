@@ -45,7 +45,7 @@ class Contact extends CI_Controller {
             $subject = $this->input->post('subject');
             $message = $this->input->post('message');
             
-            // TODO captcha!!!!!!!!!
+            // TODO captcha
             
             // construct email and send
             $this->email->from($sender_email, $sender_name);

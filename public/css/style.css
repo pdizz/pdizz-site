@@ -112,6 +112,25 @@ a:visited {
     clear: both;
 }
 
+#content p {
+    text-indent: 2em;
+    margin: .5em 0; 
+}
+
+#content ul {
+    padding: 0 1em;
+}
+
+#content ul li {
+    list-style: square;
+    padding-top: .1em;
+}
+
+#content ul li li {
+    list-style: circle;
+    margin-left: .5em;
+}
+
 /* Resume specific */
 
 #contact {
@@ -135,20 +154,6 @@ a:visited {
 }
 
 /* end resume */
-
-#content ul {
-    padding: 0 1em;
-}
-
-#content ul li {
-    list-style: square;
-    padding-top: .1em;
-}
-
-#content ul li li {
-    list-style: circle;
-    margin-left: .5em;
-}
 
 #contact_form label{
     display: block;

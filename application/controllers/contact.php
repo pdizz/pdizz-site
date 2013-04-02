@@ -17,7 +17,7 @@ class Contact extends CI_Controller {
         $this->form_validation->set_rules('subject', 'Subject', 'required');
         $this->form_validation->set_rules('message', 'Message', 'required');
         
-        if ($this->form_validation->run() === FALSE) {
+        if ($this->form_validation->run() === FALSE) { // validation failed
             // reload the page
             $data['title'] = 'Contact Me';
             $data['view'] = 'contact/contact';
@@ -32,8 +32,8 @@ class Contact extends CI_Controller {
             
             $this->load->view('template', $data);
         }
-        else {
-            // form passed validation
+        else { // validation passed
+            // populate variables from post information
             $sender_email = $this->input->post('sender_email');
             $sender_name = $this->input->post('sender_name');
             $subject = $this->input->post('subject');
@@ -43,7 +43,7 @@ class Contact extends CI_Controller {
             
             // construct email and send
             $this->email->from($sender_email, $sender_name);
-            $this->email->to('pete.albrecht@gmail.com');
+            $this->email->to($this->config->item('admin_email')); // default admin address
             $this->email->subject($subject);
             $this->email->message($message);
             $this->email->send();

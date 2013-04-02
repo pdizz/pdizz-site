@@ -19,6 +19,11 @@ class Source {
             $source_code .= "\n/* There is no model used on this page */ \n\n";
         }
         
+        //if ($view !== NULL) {
+          //  $source_code .= "\n/* This is the view '$view' */ \n\n";
+          //  $source_code .= $this->clean_code($view);
+        //}
+        
         return $source_code;
     }
     

@@ -37,7 +37,6 @@ class Contact extends CI_Controller {
                     );
             
             $this->load->view('template', $data);
-
         }
         else {
             // form passed validation
@@ -71,11 +70,8 @@ class Contact extends CI_Controller {
                     'views/contact/success.php'
                     );
             
-            $this->load->view('template', $data);
-            
-        }
-
-        
+            $this->load->view('template', $data);            
+        }        
         
     }    
     

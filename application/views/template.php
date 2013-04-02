@@ -7,15 +7,13 @@ $this->load->view('fragments/navigation');
 <!-- beginning of main content view -->
 
 <div id="content">
-<?php    
-$this->load->view($view);
-$this->load->view('fragments/source');
-?>
+<?php $this->load->view($view); ?>
 </div>
 
 <!-- end of content view -->
 
 <?php
+$this->load->view('fragments/source');
 $this->load->view('fragments/navigation');
 $this->load->view('fragments/footer');
 ?>

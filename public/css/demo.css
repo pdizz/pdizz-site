@@ -21,11 +21,12 @@ body {
     margin : auto;
     overflow : auto;
     border : 1px solid black;
-    float : left;
+    clear: both;
 }
 #preview canvas {
     border : 1px solid black;
     margin : 1px;
+    float: left;
 }
 
 #nofit {

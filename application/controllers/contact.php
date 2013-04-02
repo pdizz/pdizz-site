@@ -22,12 +22,6 @@ class Contact extends CI_Controller {
             $data['title'] = 'Contact Me';
             $data['view'] = 'contact/contact';
             
-            // repopulate the form with previous info
-            $data['sender_email'] = $this->input->post('sender_email');
-            $data['sender_name'] = $this->input->post('sender_name');
-            $data['subject'] = $this->input->post('subject');
-            $data['message'] = $this->input->post('message');
-            
             // get source code to pass to source view
             $this->load->library('source');
             $data['source'] = $this->source->get(

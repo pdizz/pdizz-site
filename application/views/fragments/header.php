@@ -14,4 +14,5 @@
     </head>
     <body>
         <h1 id="logo"><a href="<?php echo base_url(); ?>">pdizz</a></h1>
-
+        
+<!-- end of header view -->

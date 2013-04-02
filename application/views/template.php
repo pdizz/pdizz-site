@@ -4,12 +4,16 @@ $this->load->view('fragments/navigation');
 //$this->load->view('fragments/message');
 ?>
 
+<!-- beginning of main content view -->
+
 <div id="content">
 <?php    
 $this->load->view($view);
 $this->load->view('fragments/source');
 ?>
 </div>
+
+<!-- end of content view -->
 
 <?php
 $this->load->view('fragments/navigation');

@@ -5,6 +5,7 @@
         <meta http-equiv="content-type" 
 		content="text/html;charset=utf-8">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/reset.css" >
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css" >
         <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

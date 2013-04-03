@@ -16,9 +16,7 @@ class Pages extends CI_Controller {
         // get source code to pass to source view
         $this->load->library('source');
         $data['source'] = $this->source->get(
-                'controllers/pages.php', 
-                NULL, 
-                'views/pages/'.$page.'.php'
+                'controllers/pages.php'
                 );
         
         // render the page

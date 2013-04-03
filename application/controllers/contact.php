@@ -60,7 +60,6 @@ class Contact extends CI_Controller {
             $this->load->library('source');
             $data['source'] = $this->source->get(
                     'controllers/contact.php',
-                    NULL, 
                     'views/contact/success.php'
                     );
             

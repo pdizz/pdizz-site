@@ -3,26 +3,13 @@
 class Source {
     
     // parameters should be path to file relative to application folder
-    public function get($controller = NULL, $model = NULL, $view = NULL) { 
+    public function get() { 
         $source_code = '';
         
-        if ($controller !== NULL) {
-            $source_code .= "\n/* This is the controller '$controller' */ \n\n";
-            $source_code .= $this->clean_code($controller);
+        foreach(func_get_args() as $arg) {
+            $source_code .= "\n/* '$arg' */ \n\n";
+            $source_code .= $this->clean_code($arg);
         }
-        
-        if ($model !== NULL) {
-            $source_code .= "\n/* This is the model '$model' */ \n\n";
-            $source_code .= $this->clean_code($model);
-        }
-        else {
-            $source_code .= "\n/* There is no model used on this page */ \n\n";
-        }
-        
-        //if ($view !== NULL) {
-          //  $source_code .= "\n/* This is the view '$view' */ \n\n";
-          //  $source_code .= $this->clean_code($view);
-        //}
         
         return $source_code;
     }

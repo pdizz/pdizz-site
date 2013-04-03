@@ -12,7 +12,6 @@ class Projects extends CI_Controller {
             $this->load->library('source');
             $data['source'] = $this->source->get(
                     'controllers/projects.php',
-                    NULL, 
                     'views/pages/projects.php'
                     );
             
@@ -28,7 +27,6 @@ class Projects extends CI_Controller {
             $this->load->library('source');
             $data['source'] = $this->source->get(
                     'controllers/projects.php',
-                    NULL, 
                     'views/projects/'.$project.'.php'
                     );
             

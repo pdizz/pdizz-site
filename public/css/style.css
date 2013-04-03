@@ -45,12 +45,12 @@ body {
     background-color: #1e1e1e;
 }
 
-a {
+#pdizz a {
     color: #569cd6;
     text-decoration: none;
 }
 
-a:hover {
+#pdizz a:hover {
     text-decoration: underline;
 }
 /*
@@ -58,30 +58,30 @@ a:visited {
     color: #68217a;
 }*/
 
-#logo {
+#pdizz #logo {
     padding-bottom: 3em;
 }
 
-#logo a {
+#pdizz #logo a {
     color: #608b4e;
     font-size: 2em;
 }
 
-.nav {
+#pdizz .nav {
     display: inline-block;
     width: 100%;
     background-color: #0f0f0f;
     padding: .2em;
 }
 
-.nav li a {
+#pdizz .nav li a {
     font-size: 1em;
     float: left;
     display: block;
     padding-right: 1em;
 }
 
-#message {
+#pdizz #message {
     text-align: center;
     color: #d69d85;
     /*
@@ -96,81 +96,81 @@ a:visited {
     */
 }
 
-#content {
+#pdizz #content {
     padding: 2em;
 }
 
-#content h1 {
+#pdizz #content h1 {
     font-size: 2em;
     padding: .2em;
     text-align: center;
 }
 
-#content h2 {
+#pdizz #content h2 {
     font-size: 1.5em;
     font-style: italic;
     padding: .5em 0em;
     clear: both;
 }
 
-#content p {
+#pdizz #content p {
     text-indent: 2em;
     margin: .5em 0; 
 }
 
-#content ul {
+#pdizz #content ul {
     padding: 0 1em;
 }
 
-#content ul li {
+#pdizz #content ul li {
     list-style: square;
     padding-top: .1em;
 }
 
-#content ul li li {
+#pdizz #content ul li li {
     list-style: circle;
     margin-left: .5em;
 }
 
 /* Resume specific */
 
-#contact {
+#pdizz #contact {
     margin: 0 auto;
     text-align: center;
 }
 
-#contact li{
+#pdizz #contact li{
     display: inline-block;
     padding: .3em 1em;
 }
 
-#tech_left {
+#pdizz #tech_left {
     float:left;
     margin-left: 3em;
 }
 
-#tech_right {
+#pdizz tech_right {
     float: right;
     margin-right: 3em;
 }
 
 /* end resume */
 
-#contact_form label{
+#pdizz #contact_form label{
     display: block;
 }
 
-#contact_form .error {
+#pdizz #contact_form .error {
     float: right;
     color: #68217a;
 }
 
-#copyright {
+#pdizz #copyright {
     text-align: center;
     padding: .5em;
 }
 
-#source_code {
+#pdizz #source_code {
     margin: 2em;
     padding: .5em;
     color: #d69d85;
@@ -178,7 +178,7 @@ a:visited {
     border: 1px solid #d69d85;
 }
 
-.slide_toggle_box {
+#pdizz .slide_toggle_box {
     display: none;
     text-wrap: normal;
     overflow: auto;

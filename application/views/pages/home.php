@@ -5,7 +5,7 @@ I love programming and the power it gives me to create something from nothing.
 I'm a student of algorithms and I'm fascinated with solving impossibly large problems 
 using clever techniques. </p>
 <p>When I'm not in the office I love to get outdoors and hit the trail. I've written 
-some of my best code in in my head while walking my dog. I like kayaking and mountain 
+some of my best code in my head while walking my dog. I like kayaking and mountain 
 biking, and I enjoy the mental and physical challenge of archery and marksmanship. 
 Whether it's new technologies or new trails I'm always exploring.</p>
 <h2>Career</h2>
@@ -18,7 +18,7 @@ waste time, entertain, and create new worlds out of thin air. My first exposure
 to programming was through the book <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>, 
 which I highly recommend. I was instantly hooked. Before long I was using my 
 new super powers to solve puzzles on <a href="http://projecteuler.net/">Project Euler</a> 
-and change the text on webpages to funny and inappropriate things. </p>
+and change the text on webpages to say funny and inappropriate things. </p>
 <p>Like many others, my first project was a pet project I developed to solve a 
 particular problem in my life. I'm an avid gamer and one of my favorite series is 
 "The Elder Scolls" RPG series. I designed a database of alchemy ingredients and 

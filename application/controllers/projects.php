@@ -11,8 +11,7 @@ class Projects extends CI_Controller {
             // get source code to pass to source view
             $this->load->library('source');
             $data['source'] = $this->source->get(
-                    'controllers/projects.php',
-                    'views/pages/projects.php'
+                    'controllers/projects.php'
                     );
             
             // render the page
@@ -26,8 +25,7 @@ class Projects extends CI_Controller {
             // get source code to pass to source view
             $this->load->library('source');
             $data['source'] = $this->source->get(
-                    'controllers/projects.php',
-                    'views/projects/'.$project.'.php'
+                    'controllers/projects.php'
                     );
             
             // render the page

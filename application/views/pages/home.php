@@ -1,4 +1,4 @@
-<h1>Pete Albrecht - Web Developer</h1>
+<h1>Pete Albrecht - Application Developer</h1>
 <h2>About Me</h2>
 <p>I am a geek, a programmer, a gamer, a media junkie, and an outdoor enthusiast. 
 I love programming and the power it gives me to create something from nothing. 

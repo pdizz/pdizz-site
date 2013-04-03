@@ -21,7 +21,6 @@ class Pages extends CI_Controller {
         
         // render the page
         $this->load->view('template', $data);
-
     }
 }
 

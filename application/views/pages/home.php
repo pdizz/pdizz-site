@@ -1,3 +1,17 @@
-<h2>Welcome</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum laoreet massa et laoreet. Quisque condimentum porta sapien, quis placerat erat sagittis eu. Proin eu lorem sem, non laoreet risus. Praesent augue urna, fringilla ac feugiat quis, posuere vitae mi. In nisi mi, bibendum vitae semper ut, ullamcorper eu lorem. Duis gravida, nunc in ullamcorper mollis, risus odio dapibus erat, vitae congue odio nunc in augue. Donec ac nisl urna. Suspendisse potenti. Vivamus sed ultricies dolor. Donec ut blandit ipsum. Cras quam lectus, consectetur a vehicula et, mollis vel libero. Mauris euismod ullamcorper lorem vel feugiat. </p>
-<p>Etiam vitae velit ipsum. Suspendisse imperdiet arcu sed turpis commodo cursus. Donec vehicula ipsum sit amet velit scelerisque a pharetra mi semper. Nulla mollis odio lobortis leo dapibus sodales. Nulla at rutrum quam. Mauris laoreet posuere nisl sed hendrerit. Quisque consectetur ornare augue, quis sagittis risus ultrices a. Phasellus ac augue in mi blandit lacinia non a lectus. Sed cursus, sapien a tincidunt commodo, nulla arcu ullamcorper arcu, vel pretium nunc lectus quis enim. Etiam dictum lobortis pulvinar. Nulla ornare mi non turpis dignissim in ultrices nibh suscipit. </p>
+<h1>Pete Albrecht - Web Developer</h1>
+<h2>About Me</h2>
+<p>I started my web development career after working for 10 years in broadcasting 
+and print media. I've worked as a photographer, printer, recording engineer, 
+even as a director for a local news broadcast. While interesting, all other forms of 
+media pale in comparison to the power of the Internet to inform and entertain.</p>
+<p>Like many others, my first project was a pet project I developed to solve a 
+particular problem in my life. I'm an avid gamer and one of my favorite series is 
+"The Elder Scolls" RPG series. I designed a database of alchemy ingredients and 
+effects from various games in the series, wrote some PHP scripts to scrape the data 
+from the wiki pages and insert it into relational tables. Finally, using some 
+clever SQL, I was able to query the database for ingredients with matching effects 
+and list all possible potion recipes given the ingredients I had in my inventory. 
+Through the project I not only learned about what's involved in crafting a web 
+application, but also developed an affinity for database management and the power 
+of SQL.</p>
+

@@ -10,9 +10,9 @@
     source code available at <a href="https://github.com/pdizz/Packager">github.com/pdizz/Packager</a>.</p>
     <p>This algorithm will pack multiple images to fit on variable-length sheets
     printed on roll-paper. It is used in printing school picture packages e.g. a 
-    a sheet of wallets. Because the length of the sheets varies the size of the 
-    "bin" or sheet must grow to fit the images as they're added without wasting 
-    extra space or requiring the paper to be cut by hand.</p>
+    sheet of wallets. Because the length of the sheets varies the size of the "bin" 
+    or sheet must grow to fit the images as they're added without wasting extra space 
+    or requiring the paper to be cut by hand.</p>
     <p>This prototype algorithm was translated into C# and used in our production 
     software with great success.</p>
     

@@ -11,14 +11,14 @@ class Contact extends CI_Controller {
     
     public function index() {
         
-        // validate form (TODO: filtering, XSS)
+        // validate form
         $this->form_validation->set_rules('sender_name', 'From', 'required');
         $this->form_validation->set_rules('sender_email', 'Email', 'required|valid_email');
         $this->form_validation->set_rules('subject', 'Subject', 'required');
         $this->form_validation->set_rules('message', 'Message', 'required');
         
         if ($this->form_validation->run() === FALSE) { // validation failed
-            // reload the page
+            // reload the page (or load for the first time)
             $data['title'] = 'Contact Me';
             $data['view'] = 'contact/contact';
             
@@ -39,7 +39,7 @@ class Contact extends CI_Controller {
             $subject = $this->input->post('subject');
             $message = $this->input->post('message');
             
-            // TODO captcha
+            // TODO captcha or check IP address for spam
             
             // construct email and send
             $this->email->from($sender_email, $sender_name);

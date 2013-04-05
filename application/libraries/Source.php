@@ -14,7 +14,7 @@ class Source {
         return $source_code;
     }
     
-    // $source should be path to file relative to application folder
+    // $code should be path to file relative to application folder
     private function clean_code($code) {
         return htmlentities(file_get_contents(APPPATH . $code));
     }

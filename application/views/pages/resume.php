@@ -58,7 +58,7 @@
 </ul>
 <h2>Personal Projects</h2>
 <ul>
-    <li><a href="projects/alchemy">Elder Scrolls Alchemy Workshop</a>
+    <li><a href="https://github.com/pdizz/Alchemy">Elder Scrolls Alchemy Workshop</a>
         <ul>
             <li>Web application using PHP/MySQL/jQuery/AJAX/JSON</li>
             <li>Designed relational MySQL database scrapped from flat wiki tables</li>

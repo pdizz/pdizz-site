@@ -160,6 +160,10 @@ a:visited {
     display: block;
 }
 
+#pdizz #contact_form input {
+    display: block;
+}
+
 #pdizz #contact_form .error {
     float: right;
     color: #68217a;

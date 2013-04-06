@@ -1,24 +1,12 @@
 Template engine
 
-meta page
-
 projects page descriptions and add more projects
-
-
-License info for bin-packing project
 
 alchemy project
 
 contact page
-- captcha
+- error messages
+- log
+- spam checks
 
-messages view
-
-link personal projects section in resume to projects home page
-
-
-HOME PAGE FFS!!!
-
-move all project files (css, js, views) to separate folder
-
-404!!!!!!
+404 page

@@ -35,6 +35,7 @@ class Contact extends CI_Controller {
         }
         else { // validation passed
             // populate variables from post information
+            $sender_ip = $this->input->ip_address();            
             $sender_email = $this->input->post('sender_email');
             $sender_name = $this->input->post('sender_name');
             $subject = $this->input->post('subject');
@@ -51,7 +52,7 @@ class Contact extends CI_Controller {
             
             // store contact info in DB
             $this->load->model('contact_model');
-            $this->contact_model->set($sender_email, $sender_name, $subject, $message);
+            $this->contact_model->set($sender_ip, $sender_email, $sender_name, $subject, $message);
             
             // success!
             $data['title'] = 'Success';

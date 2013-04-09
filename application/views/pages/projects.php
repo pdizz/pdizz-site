@@ -1,4 +1,20 @@
 <h1>Projects</h1>
+<h2><a href="https://github.com/pdizz/JotDown">Jot-down - Code Igniter application for rapid 
+note-taking using Markdown</a></h2>
+<p>I conceived of this project while taking an algorithms class as an application 
+to allow computer science and math students (or anyone) to take notes quickly using 
+<a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax for formatting, 
+code blocks, and mathematical notation.</p>
+<ul>Current features:
+    <li>User authentication with Ion-Auth</li>
+    <li>Type notes in plaintext with Markdown syntax and view them in formatted HTML</li>
+    <li>Save notes to database and edit them later.</li>
+</ul>
+<ul>Planned features:
+    <li>Export notes to html, pdf, other formats.</li>
+    <li>LaTeX support for mathematical notation.</li>
+    <li>Sharing notes between "study groups".</li>
+</ul>
 <h2><a href="<?php echo base_url(); ?>projects/bin-packing">Bin-packing for School Pictures</a></h2>
 <p>Bin packing algorithm derived from 
 <a href="https://github.com/jakesgordon/bin-packing">github.com/jakesgordon/bin-packing</a>

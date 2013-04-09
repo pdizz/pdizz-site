@@ -119,17 +119,20 @@ a:visited {
 }
 
 #pdizz #content ul {
-    padding: 0 1em;
+    padding: 1em;
+    color: #d69d85;
 }
 
 #pdizz #content ul li {
     list-style: square;
     padding-top: .1em;
+    color: #ffffff;
 }
 
 #pdizz #content ul li li {
     list-style: circle;
     margin-left: .5em;
+    font-size: 1em;
 }
 
 /* Resume specific */

@@ -8,8 +8,8 @@
     <div class='blocks'>
         <label for='blocks'>Blocks: W x H [x N] - </br>
             <pre>
-    For best results, sizes must be entered from largest to smallest.
-    This will be taken care of using a sort algorithm or through the UI eventually.</br>
+    For best results, enter blocks from largest to smallest.
+    This is taken care of using a sort algorithm or through the UI in production.</br>
     Maximum sheet size is 100x80</br>
     8x10       = '100x80'
     5x7        = '50x70'

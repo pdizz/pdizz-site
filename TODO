@@ -1,7 +1,5 @@
 Template engine
 
-projects page descriptions and add more projects
-
 alchemy project
 
 contact page
@@ -10,3 +8,5 @@ contact page
 - spam checks
 
 404 page
+
+move content pages to DB

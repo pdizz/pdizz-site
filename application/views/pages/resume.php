@@ -56,7 +56,7 @@
         </ul>
     </li>
 </ul>
-<h2>Personal Projects</h2>
+<h2><a href="<?php echo base_url(); ?>/projects">Personal Projects</a></h2>
 <ul>
     <li><a href="https://github.com/pdizz/Alchemy">Elder Scrolls Alchemy Workshop</a>
         <ul>

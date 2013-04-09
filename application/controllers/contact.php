@@ -27,6 +27,7 @@ class Contact extends CI_Controller {
             $data['source'] = $this->source->get(
                     'controllers/contact.php',
                     'models/contact_model.php', 
+                    'views/template.php',
                     'views/contact/contact.php'
                     );
             
@@ -60,7 +61,8 @@ class Contact extends CI_Controller {
             $this->load->library('source');
             $data['source'] = $this->source->get(
                     'controllers/contact.php',
-                    'views/contact/success.php'
+                    'views/contact/success.php',
+                    'views/template.php'
                     );
             
             $this->load->view('template', $data);            

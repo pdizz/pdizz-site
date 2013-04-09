@@ -7,7 +7,7 @@ class Source {
         $source_code = '';
         
         foreach(func_get_args() as $arg) {
-            $source_code .= "\n/* '$arg' */ \n\n";
+            $source_code .= "\n/********** '$arg' **********/ \n\n";
             $source_code .= $this->clean_code($arg);
         }
         
